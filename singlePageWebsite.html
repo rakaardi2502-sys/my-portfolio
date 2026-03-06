@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0"> 
+        <title>Single Page Website</title>
+        <link rel="stylesheet" href="CSS_file/singlePageWebsite.css">
+        <script src="CSS_file/JavaScript_file/singlePageWebsite.js"></script>
+        <script src="https://kit.fontawesome.com/44cdee5398.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" id="home">
+                <ul>
+                    <li class="profile">
+                        Raka Ardi Wiguna <br>
+                        <span class="icon">
+                            <i class="fa fa-envelope"></i> rakaardi2502@gmailcom
+                        </span><br>
+                        <span class="icon">
+                            <i class="fa fa-phone"></i> +62 812-2294-6364 
+                        </span>
+                    </li>
+                    <li class="listbar"><a href="#section4">Recommendations</a></li>
+                    <li class="listbar"><a href="#section3">Projects</a></li>
+                    <li class="listbar"><a href="#section2">Skills</a></li>
+                    <li class="listbar"><a href="#section1">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section" id="section1">
+                <img src="/images/Dokumen_dari_Raka_Ardi__2_-removebg-preview.png" id="img1">
+                <div class="box1">
+                    <h1>Hi, I'm Raka Ardi Wiguna 👋</h1>
+                    <p>I'm an undergraduated Information System student in Institute Teknologi Sepuluh Nopember. I have interesrt to become a Fullstack Software Engineer and a lecturer. My plan is to get a scolarship so that i can get my S3 title as soon as posible</p>
+                </div>
+            
+            </section>
+
+            <section class="section" id="section2">
+                <h1>Skills</h1>
+                <div class="box" id="html">
+                    <i class="fa-brands fa-html5 fa-3x" style="color: rgb(255, 131, 59); margin-top: 20px;"></i>
+                    <p>HTML</p>
+                    <p>0.5 Years Experience</p>
+                </div>
+                <div class="box" id="js">
+                    <i class="fa-brands fa-angular fa-3x" style="color: rgb(255, 212, 59); margin-top: 20px;"></i>
+                    <p>JavaScript</p>
+                    <p>0.5 Years Experience</p>
+                </div>
+                <div class="box" id="java">
+                    <i class="fa-brands fa-java fa-3x" style="color: rgb(177, 151, 252); margin-top: 20px;"></i>
+                    <p>Java</p>
+                    <p>0.5 Years Experience</p>
+                </div>
+                <div class="box" id="python">
+                    <i class="fa-brands fa-python fa-3x" style="color: rgb(138, 43, 226); margin-top: 20px;"></i>
+                    <p>Python</p>
+                    <p>0.5 Years Experience</p>
+                </div>
+                <div class="box" id="MySQL">
+                    <i class="fa-solid fa-code fa-3x" style="color: rgb(116, 192, 252); margin-top: 20px;"></i>
+                    <p>MySQL</p>
+                    <p>1 day Experience</p>
+                </div>
+                <div class="box" id="css">
+                    <i class="fa-brands fa-css3 fa-3x" style="color: rgb(51, 83, 166); margin-top: 20px;"></i>
+                    <p>CSS</p>
+                    <p>0.5 Years Experience</p>
+                    
+                </div>
+                
+            </section>
+
+            <section class="section" id="section3">
+                <h1>Projects</h1>
+                <ul>
+                    <li class="header">Pet Care Schedule</li>
+                    <li class="content">Make a java program that is used for pet care scheduling with some features like, pet register, add appointment, display all pets, and generates the display by it's upcomming shedule</li>
+                    <hr>
+                    <li class="header">Phone Number Management System</li>
+                    <li class="content">Create a java program that is used for managing phone number with some features like, add appointment, display all phone numbers, find contact, remove contact, and more</li>
+                    <hr>
+                    <li class="header">Single Page Website</li>
+                    <li class="content">Create a single page website that contains creator profiles, skills, projects, and recommendations</li>
+                </ul>
+            </section>
+
+            <section class="section" id="section4">
+                <h1>Recommendations</h1>
+                <div id="recBox"></div>
+            </section>
+
+            <section class="section" id="section5">
+                <h2>Leave a Recommendation</h2>
+                <input type="text" placeholder="Name (Optional)" style="width: 500px;" id="name">
+                <br>
+                <textarea placeholder="Message" style="width: 500px;" id="recommendation"></textarea>
+                <input type="submit" value="Submit" id="submit" onclick="return addRecomendation()">
+            </section>
+        </main>
+    </body>
+    <div id="homeIcon">
+        <a href="">
+            <i class="fa fa-house fa-3x" id="homeImg" style="color: rgb(138, 43, 226);"></i>
+        </a> 
+    </div>
+    <footer>
+        &copy Create by Raka Ardi Wiguna
+    </footer>
+</html>

@@ -1,0 +1,173 @@
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color: blueviolet;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.icon {
+    gap: 8px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.listbar:hover {
+    text-decoration: underline white;
+    font-weight: bolder;
+    background-color: rgba(76, 26, 124, 0.532);
+}
+
+.icon i {
+    width: 20px;
+    font-size: 16px
+}
+
+
+.listbar {
+    float: right;
+    justify-content: center;
+}
+
+.profile {
+    float: left; /*Biar sejajar sama navbar*/
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: white;
+}
+
+/* Foto profil */
+
+#img1 {
+    width: 200px;
+    border: 2px solid blueviolet;
+    border-radius: 100%;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+.box {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 20px ;
+    align-items: center;
+    box-shadow: 1px 1px 10px gray, -1px -1px 10px gray;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.content{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+.recommendation-item {
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    float: left;
+    margin: 15px;
+}
+
+#section1 {
+    text-align: center;
+}
+
+#section5 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#submit {
+    margin-top: 20px; 
+    border: 1px solid blueviolet; 
+    background-color: white; 
+    border-radius: 10px; 
+    font-size: 20px; 
+    height: 50px; 
+    width: 200px; 
+    color: blueviolet; 
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+#homeIcon {
+    border: 1px solid blueviolet;
+    background-color: white;
+    width:40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+}
+
+#homeIcon:hover {
+    animation: grow 0.5s ease forwards;
+}
+
+@keyframes grow {
+    0%{transform: scale(1)}
+    100%{transform: scale(1.1)}
+}
